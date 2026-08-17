@@ -1,48 +1,104 @@
-# Astro Starter Kit: Basics
+# Exobchix Apps
+
+## Overview
+
+`exobchix-apps` is a web app built with Astro and Vue.
+
+- Main page entry: `src/pages/index.astro`
+- UI composition: `index.astro` renders `src/components/Apps.astro`
+- Interactive feature: `Apps.astro` mounts `src/components/TeamGenerator.vue`
+
+## Stack
+
+- Language/runtime: JavaScript (ES modules) with TypeScript config (`tsconfig.json`)
+- Framework: Astro (`astro`)
+- UI framework: Vue 3 (`vue`) via `@astrojs/vue`
+- Styling: Tailwind CSS via `@astrojs/tailwind`
+- Package manager: npm (`package-lock.json` present)
+
+## Requirements
+
+- Node.js (TODO: specify exact supported version)
+- npm
+
+## Setup and Run
+
+Install dependencies:
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Start development server:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```sh
+npm run dev
+```
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Build production output:
 
-## 🚀 Project Structure
+```sh
+npm run build
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+Preview production build locally:
+
+```sh
+npm run preview
+```
+
+Run Astro CLI commands:
+
+```sh
+npm run astro -- --help
+```
+
+## Scripts
+
+Defined in `package.json`:
+
+| Script | Command | Description |
+| :-- | :-- | :-- |
+| `dev` | `astro dev` | Start local development server |
+| `build` | `astro build` | Build project into `dist/` |
+| `preview` | `astro preview` | Preview built app locally |
+| `astro` | `astro` | Run Astro CLI directly |
+
+## Environment Variables
+
+No runtime environment variables were found in the current source/config files (`import.meta.env` and `process.env` usage not detected).
+
+- TODO: add documented env vars here if/when introduced.
+
+## Tests
+
+No test scripts are currently defined in `package.json`.
+
+- TODO: add testing setup (framework + commands) and document how to run tests.
+
+## Project Structure
 
 ```text
-/
+.
+├── astro.config.mjs
+├── package.json
+├── package-lock.json
+├── tailwind.config.mjs
+├── tsconfig.json
 ├── public/
-│   └── favicon.svg
 ├── src/
+│   ├── components/
+│   │   ├── Apps.astro
+│   │   ├── TeamGenerator.vue
+│   │   └── Welcome.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro
-└── package.json
+└── README.md
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## License
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- TODO: license is not declared in `package.json` and no `LICENSE` file was found. Add the project license here.
+# exobchix-apps

@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "exobchix-apps",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.10"
+    "@astrojs/tailwind": "^5.1.5",
+    "@astrojs/vue": "^5.0.6",
+    "astro": "^5.1.10",
+    "hucre": "^0.3.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.7",
+    "papaparse": "^5.5.3",
+    "tailwindcss": "^3.4.17",
+    "vue": "^3.5.13",
+    "vue3-easy-data-table": "^1.5.47"
   }
 }
